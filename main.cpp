@@ -24,7 +24,6 @@ int main() {
   }
 
 
-
   for (int i = 0; i < N; ++i){
     if (values[i] % 2 == 0){
 
@@ -40,10 +39,18 @@ int main() {
     cout << i << "  " << values[i] << endl;
   }
 cout << endl;
-
+  
+cout << "Even: ";
   for (int i = 0; i < e; ++i){
-  cout << even[i] << endl;
+  cout << even[i] << " ";
   }
+
+cout << "\nOdd: ";
+  for (int i = 0; i < o; ++i){
+  cout << odd[i] << " ";
+  }
+  
+  
   
   //out << odd[1];
 
