@@ -30,17 +30,17 @@ int main() {
     even[e] = values[i];
     ++e;
     }
-    else
+    else{
     odd[o] = values[i];
     ++o; 
+    }
   }
 
   for (int i = 0; i < N; ++i){
     cout << i << "  " << values[i] << endl;
   }
-cout << endl;
   
-cout << "Even: ";
+cout << "\nEven: ";
   for (int i = 0; i < e; ++i){
   cout << even[i] << " ";
   }
@@ -50,9 +50,6 @@ cout << "\nOdd: ";
   cout << odd[i] << " ";
   }
   
-  
-  
-  //out << odd[1];
 
 
   return 0;
