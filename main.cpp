@@ -18,12 +18,13 @@ int main() {
   int e = 0;
   int o = 0;
 
+  //random number generator 
   srand(static_cast<unsigned>(time(nullptr)));
   for (int i = 0; i < N; ++i) {
     values[i] = rand() % 100;
   }
 
-
+// For statement to check and store whether numbers are odd/even
   for (int i = 0; i < N; ++i){
     if (values[i] % 2 == 0){
 
@@ -36,15 +37,17 @@ int main() {
     }
   }
 
+// Cout code to list the random values
   for (int i = 0; i < N; ++i){
-    cout << i << "  " << values[i] << endl;
+    cout << "[" << i << "] " << values[i] << endl;
   }
-  
-cout << "\nEven: ";
+
+// Cout code for even numbers
+  cout << "Even: ";
   for (int i = 0; i < e; ++i){
   cout << even[i] << " ";
   }
-
+// Cout code for odd numbers
 cout << "\nOdd: ";
   for (int i = 0; i < o; ++i){
   cout << odd[i] << " ";
